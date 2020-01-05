@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>
+        Welcome to book seller
+    </title>
+    <meta charset="utf-8"/>
+</head>
+    <style type="text/css">
+     body{
+        background-color:#b0c4de;
+    }
+    .a{
+        font-family:"SimHei";
+    }
+
+    </style>
+    <body>
+    <h1 class="a">You are welcome</h1>
+    <form action="http://localhost/webExercise/lab2.php" method="POST">
+        <label>please input your name:
+            <input type="text" name="name" size="30"/>
+        </label>
+        <br>
+        <label>please input your address:
+            <input type="text" name="address"size="30" />
+        </label>
+        <br>
+        <label>please input your zip:
+            <input type="text" name="zip"size="30" />
+        </label>
+   
+    <h1 class="a">Please fill in the quantity field of the following form</h1>
+    <table border="1">
+            <caption>class test</caption>
+            <tr>
+            <th>book</th>
+            <th>publisher</th>
+            <th>price</th>
+            <th>quantity</th>
+           
+            </tr>
+            <tr>
+                <td>Web technology</td>
+                <td>Spring press</td>
+                <td>$5.0</td>
+                <td>
+                    <input type="text" name="webTech" size="30"/>
+                </td>
+               
+            </tr>
+            <tr>
+                <td>mathematics</td>
+                <td>ACM press</td>
+                <td>$6.2</td>
+                <td>
+                    <input type="text" name="math" size="30" />
+                </td>
+               
+            </tr>
+            <tr>
+                <td>principle of OS</td>
+                <td>Science press</td>
+                <td>$10</td>
+                <td>
+                    <input type="text" name="poo" size="30"/>
+                </td>
+              
+            </tr>
+            <tr>
+                <td>Theory of matrix</td>
+                <td>High education press</td>
+                <td>$7.8</td>
+                <td>
+                    <input type="text" name="tom" size="30"/>
+                </td>
+               
+            </tr>
+        </table>
+        <h1 class="a">payment method</h1>
+    
+                <input type="radio" name="payment" value="cash">cash<br>
+                <input type="radio" name="payment" value="cheque">cheque<br>
+                <input type="radio" name="payment" value="credit card">credit card
+               <br>
+               <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                </form>
+                
+    </body>
+</html>

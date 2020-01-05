@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>实验一</title>
+        <meta charset="utf-8"/>
+    </head>
+    <style>
+    body{
+        background-color:#b0c4de;
+        
+       
+    }
+    .container {
+     display: table;
+     margin: 0 auto;
+     
+    }
+    .demo{
+        text-align: center;
+    }
+    
+    </style>
+    <body>
+        <div class="demo">
+        <h2>欢迎访问包兴达的主页</h2> 
+        <img border="0" src="myphoto.jpg" alt="PersonalPhoto" width="180" height="200" >
+         </div>
+         <div class="container"> 
+         <h4>个人简介</h4>
+       
+        <p>姓名：包兴达  生日：1998.11.14<br>院校：南京邮电大学贝尔英才学院<br>最喜欢的一句话：万物皆有裂痕，那是光照进来的地方。</p>
+   
+        
+        <h4>个人经历</h4>
+        <ol start="1">
+                <li>2017年在学院“树理想、敢担当、至卓越”演讲比赛中获三等奖</li>
+                <li>2018年寒假随学院赴美参加斯坦福大学短期访学冬令营</li>
+                <li>2019年寒假参加美国大学生数学建模竞赛获三等奖</li>
+                <li>2019年参加“3S杯”全国大学生物联网大赛进入全国决赛</li>
+            </ol>
+        <h4>最喜欢的书</h4>
+        <ul>
+            <li>康熙王朝</li>
+            <li>人类简史</li>
+            <li>易中天中华史</li>
+            <li>发现东亚</li>
+        </ul>
+        <h4>个人兴趣</h4>
+        <p>爱好中西方古典音乐，会打架子鼓等乐器，对计算机技术情有独钟。</p>
+        <h4>主要课程成绩</h4>
+        <table border="1">
+                <caption>课程成绩</caption>
+                <tr>
+                    <th>课程名</th>
+                    <th>开课学期</th>
+                    <th>任课教师</th>
+                    <th>分数</th>
+                </tr>
+                <tr>
+                    <td>语文</td>
+                    <td>1</td>
+                    <td>季羡林</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                        <td>数学</td>
+                        <td>2</td>
+                        <td>陈景润</td>
+                        <td>95</td>
+                    </tr>
+                <tr>
+                            <td>英语</td>
+                            <td>2</td>
+                            <td>Jerry</td>
+                            <td>95</td>
+                        </tr>
+                <tr>
+                                <td>生物</td>
+                                <td>3</td>
+                                <td>达尔文</td>
+                                <td>95</td>
+                            </tr>
+                <tr>
+                    <td>化学</td>
+                    <td>3</td>
+                    <td>汪联辉</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                        <td>思政</td>
+                        <td>3</td>
+                        <td>冯友兰</td>
+                        <td>95</td>
+                    </tr>
+            </table>
+        <h4>学校主页链接</h4>
+        <a href="http://www.njupt.edu.cn/">南京邮电大学</a>
+        <h4>四个自信</h4>
+        <p>制度自信<br>道路自信<br>理论自信<br>文化自信</p>
+        <h4>脚本函数</h4>
+        <p>请输入方程aX^2+bX+c=0的a，b，c三个系数，我会给你解出它的两个根</p>
+        <form>
+            a=<input type="text" value="" id="InA" size="4">
+            b=<input type="text" value="" id="InB" size="4">
+            c=<input type="text" value="" id="InC" size="4">
+			<input type="button" value="解方程" id="mybutton" onclick="foo()">
+			
+        </form>
+    </div>
+    </body>
+    <script>
+            function foo()
+                {
+                    var a=document.getElementById('InA')
+                    var b=document.getElementById('InB')
+                    var c=document.getElementById('InC')
+                    if(b.value*b.value-4*a.value*c.value>=0){
+                    var root_part=Math.sqrt(b.value*b.value-4*a.value*c.value);  
+                    var demon=2.0*a.value;  
+                    var root1=(-b.value+root_part)/demon;  
+                    var root2=(-b.value-root_part)/demon;  
+                    alert("第一个根:"+root1+"\n第二个根:"+root2);  
+                    //document.write("The second root is :",root2,"<br/>");
+                    //alert("text="+a.value);
+                    }else{
+                        alert("该方程无实根。");
+                    }
+                    
+                }
+            </script>
+
+</html>
